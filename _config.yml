@@ -14,8 +14,8 @@ country:
 phone: 
 
 # homepage tiles
-tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 5
+tiles-source: # accepts "posts" or "pages"
+tiles-count: 
 
 # social settings
 500px_url:
