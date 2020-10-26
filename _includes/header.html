@@ -4,9 +4,9 @@
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style3"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
 	<a href="{{ "" | absolute_url }}" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
-	<nav>
+	<nav {% if page.layout == "landing" %}>
 		<a href="#menu" class="menu">Menu</a>
-	</nav>
+	</nav {% endif %}>
 </header>
 
 <!-- Menu -->
@@ -16,8 +16,4 @@
 		<li><a href="#projects">Projects</a></li>
 		<li><a href="#contact-me">Contact Me</a></li>
 	</ul>
-	<!-- <ul class="actions vertical">
-		<li><a href="#" class="button special fit">Get Started</a></li>
-		<li><a href="#" class="button fit">Contact Me</a></li>
-	</ul> -->
 </nav>
