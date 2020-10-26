@@ -133,7 +133,7 @@ nav-menu: null
 			</ul>
 		</section>
 		<section>
-			<form action="https://formspree.io/{{ site.email }}" method="POST">
+			<form action="https://formspree.io/f/{{ site.email }}" method="POST">
 				<div class="field half first">
 					<label for="name">Name</label>
 					<input type="text" name="name" id="name" />
