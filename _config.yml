@@ -1,7 +1,7 @@
 # site settings
 title: tania.to
 subtitle: 
-email: hello@tania.to
+email: 
 description: 
 baseurl: # the subpath of your site, e.g. /blog
 url: www.tania.to # the base hostname & protocol for your site
