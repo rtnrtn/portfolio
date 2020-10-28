@@ -41,8 +41,8 @@ nav-menu: null
 				<p>Single-page React app that allows users to filter through their Spotify playlists using custom filtering based on Spotify's audio features data.</p>
 				<p><b>Tech stack:</b> NodeJS, Express, ReactJS, Styled-Components, PostgreSQL</p>
 				<ul class="actions">
-					<li><a href="https://moodify.ca" class="button">Moodify.ca</a></li>
-					<li><a href="https://github.com/ScottGrun/moodify" class="button">GitHub Repo</a></li>
+					<li><a href="https://moodify.ca" class="button" onClick="ga('send', 'event', 'link to moodify.ca', 'click');">Moodify.ca</a></li>
+					<li><a href="https://github.com/ScottGrun/moodify" class="button" onClick="ga('send', 'event', 'link to Moodify GH repo', 'click');">GitHub Repo</a></li>
 				</ul>
 			</div>
 		</div>
@@ -59,7 +59,7 @@ nav-menu: null
 				<p>React-based single-page meeting scheduler.</p>
 				<p><b>Tech stack:</b> ReactJS, Axios, Classnames, Normalize, Storybook, Jest, Cypress</p>
 				<ul class="actions">
-					<li><a href="https://github.com/rtnrtn/scheduler" class="button">GitHub Repo</a></li>
+					<li><a href="https://github.com/rtnrtn/scheduler" class="button" onClick="ga('send', 'event', 'link to Interview Scheduler GH repo', 'click');">GitHub Repo</a></li>
 				</ul>
 			</div>
 		</div>
@@ -76,7 +76,7 @@ nav-menu: null
 				<p>Collaborative map creation tool using the Leaflet.js library plus Maptiler and Mapquest APIs.</p>
 				<p><b>Tech stack:</b> NodeJS, Express, EJS, jQuery, Ajax, PostgreSQL</p>
 				<ul class="actions">
-					<li><a href="https://github.com/super8989/WikiMap" class="button">GitHub Repo</a></li>
+					<li><a href="https://github.com/super8989/WikiMap" class="button" onClick="ga('send', 'event', 'link to Wiki Map GH repo', 'click');">GitHub Repo</a></li>
 				</ul>
 			</div>
 		</div>
@@ -93,7 +93,7 @@ nav-menu: null
 				<p>Single-page Twitter clone.</p>
 				<p><b>Tech stack:</b> NodeJS, Express, EJS, jQuery, Ajax, MongoDB</p>
 				<ul class="actions">
-					<li><a href="https://github.com/rtnrtn/tweeter" class="button">GitHub Repo</a></li>
+					<li><a href="https://github.com/rtnrtn/tweeter" class="button" onClick="ga('send', 'event', 'link to Tweeter GH repo', 'click');">GitHub Repo</a></li>
 				</ul>
 			</div>
 		</div>
@@ -110,7 +110,7 @@ nav-menu: null
 				<p>RESTful URL shortener.</p>
 				<p><b>Tech stack:</b> NodeJS, Express</p>
 				<ul class="actions">
-					<li><a href="https://github.com/rtnrtn/tinyapp" class="button">GitHub Repo</a></li>
+					<li><a href="https://github.com/rtnrtn/tinyapp" class="button" onClick="ga('send', 'event', 'link to TinyApp GH repo', 'click');">GitHub Repo</a></li>
 				</ul>
 			</div>
 		</div>
@@ -127,9 +127,9 @@ nav-menu: null
 			</header>
 			<p>Connect with me on LinkedIn, check out my GitHub, follow me on Twitter, or send me a message using the contact form.</p>
 			<ul class="icons">
-				<li><a href="{{ site.linkedin_url }}" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-				<li><a href="{{ site.github_url }}" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-				<li><a href="{{ site.twitter_url }}" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+				<li><a href="{{ site.linkedin_url }}" class="icon alt fa-linkedin" target="_blank" onClick="ga('send', 'event', 'link to LinkedIn profile', 'click');"><span class="label">LinkedIn</span></a></li>
+				<li><a href="{{ site.github_url }}" class="icon alt fa-github" target="_blank" onClick="ga('send', 'event', 'link to GitHub profile', 'click');"><span class="label">GitHub</span></a></li>
+				<li><a href="{{ site.twitter_url }}" class="icon alt fa-twitter" target="_blank" onClick="ga('send', 'event', 'link to Twitter profile', 'click');"><span class="label">Twitter</span></a></li>
 			</ul>
 		</section>
 		<section>

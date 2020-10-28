@@ -3,17 +3,17 @@
 
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style3"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
-	<a href="{{ "" | absolute_url }}" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
+	<a href="{{ "" | absolute_url }}" class="logo" onClick="ga('send', 'event', 'logo link', 'click');"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
 	<nav {% if page.layout == "landing" %}>
-		<a href="#menu" class="menu">Menu</a>
+		<a href="#menu" class="menu" onClick="ga('send', 'event', 'open menu link', 'click');">Menu</a>
 	</nav {% endif %}>
 </header>
 
 <!-- Menu -->
 <nav id="menu">
 	<ul class="links">
-		<li><a href="#about-me">About Me</a></li>
-		<li><a href="#projects">Projects</a></li>
-		<li><a href="#contact-me">Contact Me</a></li>
+		<li><a href="#about-me" onClick="ga('send', 'event', 'link to #about-me', 'click');">About Me</a></li>
+		<li><a href="#projects" onClick="ga('send', 'event', 'link to #projects', 'click');">Projects</a></li>
+		<li><a href="#contact-me" onClick="ga('send', 'event', 'link to #contact-me', 'click');">Contact Me</a></li>
 	</ul>
 </nav>
