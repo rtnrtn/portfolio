@@ -90,7 +90,7 @@ DEPENDENCIES
   capistrano-bundler (~> 2.0)
   capistrano-rbenv (~> 2.2)
   forty_jekyll_theme!
-  jekyll (~> 4.0)
+  jekyll (~> 4.1.1)
 
 BUNDLED WITH
    2.1.4
