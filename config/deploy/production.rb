@@ -70,4 +70,4 @@ namespace :deploy do
   end
 end
 
-after "deploy:finishing", "deploy:build_site"
+before "deploy:symlink", "deploy:build_site"
