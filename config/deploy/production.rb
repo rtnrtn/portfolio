@@ -63,7 +63,7 @@ server "tania.to", user: "tania", roles: %w{app}
 namespace :deploy do
   task :build_site do
     on roles(:app) do
-      within "#{deploy_to}/current" do
+      within release_path do
       	execute :jekyll, "build"
       end
     end
