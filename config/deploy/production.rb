@@ -70,4 +70,4 @@ namespace :deploy do
   end
 end
 
-after :finishing, "deploy:build_site"
+after "deploy:finishing", "deploy:build_site"

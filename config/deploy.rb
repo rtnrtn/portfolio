@@ -2,13 +2,15 @@
 lock "~> 3.14.1"
 
 set :application, "portfolio"
-set :repo_url, "git@github.com:rtnrtn/portfolio.git"
+set :repo_url, "https://github.com/rtnrtn/portfolio.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/tania/public_html/tania"
+set :rbenv_type, :user # or :system, or :fullstaq (for Fullstaq Ruby), depends on your rbenv setup
+set :rbenv_ruby, '2.7.2'
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
@@ -25,6 +27,12 @@ set :deploy_to, "/home/tania/public_html/tania"
 
 # Default value for linked_dirs is []
 append :linked_dirs, "log"
+
+# Add jekyll to the commands that need to be exec'ed by rbenv
+append :rbenv_map_bins, 'jekyll'
+
+# Add jekyll to the commands that need to be exec'd by bundle
+append :bundle_bins, 'jekyll'
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
